@@ -1,4 +1,4 @@
-import React, { Suspense, useState } from "react";
+import React, { Suspense, useEffect, useRef, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import Loader from "../components/Loader";
 import IsLand from "../models/isLand";
@@ -6,18 +6,39 @@ import Sky from "../models/Sky";
 import Bird from "../models/Bird";
 import Plane from "../models/Plane";
 import HomeInfo from "../components/HomeInfo";
+import { soundoff, soundon } from "../assets/icons";
+// @ts-ignore
+import sakura from "../assets/sakura.mp3";
 
 const Home = () => {
+  const audioRef = useRef(new Audio(sakura));
+  audioRef.current.volume = 0.4;
+  audioRef.current.loop = true;
   const [currentStage, setCurrentStage] = useState(1);
   const [isRotating, setIsRotating] = useState(false);
+  const [isPlayingMusic, setIsPlayingMusic] = useState(false);
+
+  useEffect(() => {
+    if (isPlayingMusic) {
+      //  @ts-ignore
+      audioRef.current.play();
+    }
+
+    return () => {
+      //  @ts-ignore
+      audioRef.current.pause();
+    };
+  }, [isPlayingMusic]);
 
   const adjustIsLandForScreenSIze = () => {
     let screenScale = null;
     let screenPosition = [0, -6.5, -43];
     let rotation = [0.1, 4.7, 0];
     if (window.innerWidth < 768) {
+      //  @ts-ignore
       screenScale = [0.9, 0.9, 0.9];
     } else {
+      //  @ts-ignore
       screenScale = [1, 1, 1];
     }
     return [screenScale, screenPosition, rotation];
@@ -59,6 +80,7 @@ const Home = () => {
           <directionalLight position={[1, 1, 1]} intensity={2} />
           <ambientLight intensity={0.5} />
           <hemisphereLight
+            //  @ts-ignore
             skyColor="#b1e1ff"
             groundColor="#000000"
             intensity={1}
@@ -84,6 +106,15 @@ const Home = () => {
           />
         </Suspense>
       </Canvas>
+
+      <div className="absolute bottom-2 left-2">
+        <img
+          src={!isPlayingMusic ? soundoff : soundon}
+          alt="jukebox"
+          onClick={() => setIsPlayingMusic(!isPlayingMusic)}
+          className="w-10 h-10 cursor-pointer object-contain"
+        />
+      </div>
     </section>
   );
 };

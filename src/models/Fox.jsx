@@ -11,7 +11,7 @@
 
 import React, { useRef, useEffect } from "react";
 import { useGLTF, useAnimations } from "@react-three/drei";
-
+//  @ts-ignore
 import scene from "../assets/3d/fox.glb";
 
 // 3D Model from: https://sketchfab.com/3d-models/fox-f372c04de44640fbb6a4f9e4e5845c78
@@ -22,14 +22,17 @@ export function Fox({ currentAnimation, ...props }) {
 
   // This effect will run whenever the currentAnimation prop changes
   useEffect(() => {
+    //  @ts-ignore
     Object.values(actions).forEach((action) => action.stop());
 
     if (actions[currentAnimation]) {
+      //  @ts-ignore
       actions[currentAnimation].play();
     }
   }, [actions, currentAnimation]);
 
   return (
+    //  @ts-ignore
     <group ref={group} {...props} dispose={null}>
       <group name="Sketchfab_Scene">
         <primitive object={nodes.GLTF_created_0_rootJoint} />

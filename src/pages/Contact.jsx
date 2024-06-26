@@ -28,7 +28,9 @@ const Contact = () => {
 
     emailjs
       .send(
+        //  @ts-ignore
         import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+        //  @ts-ignore
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
@@ -37,18 +39,21 @@ const Contact = () => {
           to_email: "bao.future94@gmail.com",
           message: form.message,
         },
+        //  @ts-ignore
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY,
       )
       .then(
         () => {
           setLoading(false);
           showAlert({
+            //  @ts-ignore
             show: true,
             text: "Thank you for your message 😃",
             type: "success",
           });
 
           setTimeout(() => {
+            //  @ts-ignore
             hideAlert(false);
             setCurrentAnimation("idle");
             setForm({
@@ -56,6 +61,7 @@ const Contact = () => {
               email: "",
               message: "",
             });
+            //  @ts-ignore
           }, [3000]);
         },
         (error) => {
@@ -64,6 +70,7 @@ const Contact = () => {
           setCurrentAnimation("idle");
 
           showAlert({
+            //  @ts-ignore
             show: true,
             text: "I didn't receive your message 😢",
             type: "danger",
@@ -80,6 +87,7 @@ const Contact = () => {
         <h1 className="head-text">Get in Touch</h1>
 
         <form
+          //  @ts-ignore
           ref={formRef}
           onSubmit={handleSubmit}
           className="w-full flex flex-col gap-7 mt-14"
@@ -116,6 +124,7 @@ const Contact = () => {
             Your Message
             <textarea
               name="message"
+              //  @ts-ignore
               rows="4"
               className="textarea"
               placeholder="Write your thoughts here..."
