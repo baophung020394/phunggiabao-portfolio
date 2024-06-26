@@ -63,11 +63,6 @@ export const skills = [
     type: "Database",
   },
   {
-    imageUrl: motion,
-    name: "Motion",
-    type: "Animation",
-  },
-  {
     imageUrl: mui,
     name: "Material-UI",
     type: "Frontend",
