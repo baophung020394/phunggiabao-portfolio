@@ -16,6 +16,7 @@ const HomeInfo = ({ currentStage }) => {
   if (currentStage === 2) {
     return (
       <div className="info-box">
+        <h1 className="text-center underline">About me</h1>
         <p className="font-medium sm:text-xl text-center">
           Worked with many companies <br /> and picked up many skills along the
           way
@@ -32,6 +33,7 @@ const HomeInfo = ({ currentStage }) => {
   if (currentStage === 3) {
     return (
       <div className="info-box">
+        <h1 className="text-center underline">Projects</h1>
         <p className="font-medium text-center sm:text-xl">
           Led multiple projects to success over the years. <br /> Curious about
           the impact?
@@ -48,6 +50,7 @@ const HomeInfo = ({ currentStage }) => {
   if (currentStage === 4) {
     return (
       <div className="info-box">
+        <h1 className="text-center underline">Contact</h1>
         <p className="font-medium sm:text-xl text-center">
           Need a project done or looking for a dev? <br /> I'm just a few
           keystrokes away

@@ -1,12 +1,21 @@
+import React from "react";
 import { Link } from "react-router-dom";
 
 import { arrow } from "../assets/icons";
 import CTA from "../components/CTA";
 import { projects } from "../contants";
+import useAlert from "../hooks/useAlert";
+import Alert from "../components/Alert";
 
 const Projects = () => {
+  const { alert, showAlert, hideAlert } = useAlert();
   return (
     <section className="max-container">
+      {alert.show && (
+        <div className=" fixed top-0 w-[100%] left-0">
+          <Alert {...alert} />
+        </div>
+      )}
       <h1 className="head-text">
         My{" "}
         <span className="blue-gradient_text drop-shadow font-semibold">
@@ -15,11 +24,12 @@ const Projects = () => {
       </h1>
 
       <p className="text-slate-500 mt-2 leading-relaxed">
-        I've embarked on numerous projects throughout the years, but these are
-        the ones I hold closest to my heart. Many of them are open-source, so if
-        you come across something that piques your interest, feel free to
-        explore the codebase and contribute your ideas for further enhancements.
-        Your collaboration is highly valued!
+        I have been involved in numerous projects, primarily focused on
+        ecommerce and real estate. I've also worked on projects related to
+        gaming on e-wallets, chat rooms, and stock information. Currently, I can
+        work as a MERN stack developer with proficient skills in Node.js,
+        React.js, PostgreSQL, MongoDB, Docker, and Kubernetes. If you need me, I
+        am committed to delivering the highest value for the product!
       </p>
 
       <div className="flex flex-wrap my-20 gap-16">
@@ -43,10 +53,26 @@ const Projects = () => {
               <p className="mt-2 text-slate-500">{project.description}</p>
               <div className="mt-5 flex items-center gap-2 font-poppins">
                 <Link
-                  to={project.link}
-                  target="_blank"
+                  to={project.link === "none" ? "/projects" : project.link}
+                  target={`${project.link === "none" ? "_self" : "_blank"}`}
                   rel="noopener noreferrer"
                   className="font-semibold text-blue-600"
+                  onClick={() => {
+                    if (project.link === "none") {
+                      showAlert({
+                        //  @ts-ignore
+                        show: true,
+                        text: "The project is internal, so there is no live link available.😃",
+                        type: "success",
+                      });
+
+                      setTimeout(() => {
+                        //  @ts-ignore
+                        hideAlert(false);
+                        //  @ts-ignore
+                      }, [3000]);
+                    }
+                  }}
                 >
                   Live Link
                 </Link>

@@ -1,4 +1,3 @@
-import { meta, shopify, starbucks, tesla } from "../assets/images";
 import {
   car,
   contact,
@@ -11,7 +10,6 @@ import {
   javascript,
   linkedin,
   mongodb,
-  motion,
   mui,
   nextjs,
   nodejs,
@@ -24,7 +22,17 @@ import {
   tailwindcss,
   threads,
   typescript,
+  viralprofit,
+  seven11,
 } from "../assets/icons";
+import {
+  apollo,
+  hpicture,
+  onemount,
+  smartosc,
+  waveasean,
+  rikkei,
+} from "../assets/images";
 
 export const skills = [
   {
@@ -106,55 +114,71 @@ export const skills = [
 
 export const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "PHP Developer",
+    company_name: "Apollo English",
+    icon: apollo,
     iconBg: "#accbe1",
-    date: "March 2020 - April 2021",
+    date: "Oct 2015 - Jan 2017",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Development and maintenance of company system Sugar CRM",
+      "Professional training to use the system for sales, admins, teachers",
+      // "Technology used: PHP, Sugar CRM",
+      // "Team size: 1 CTO, 2 PHP, 1 Database Engineer",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#fbc3bc",
-    date: "Jan 2021 - Feb 2022",
+    title: "Fresher - Junior Frontend",
+    company_name: "SmartOSC",
+    icon: smartosc,
+    iconBg: "#e1e1e1",
+    date: "Jul 2017 - Sep 2019",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Development and maintenance project for clients",
+      "Slice HTML from XD and Zeplin files. Responsible for the website's responsive.",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#b7e4c7",
-    date: "Jan 2022 - Jan 2023",
+    title: "Junior Frontend Angular",
+    company_name: "Hanh Tinh (GLOBALTECH)",
+    icon: hpicture,
+    iconBg: "#000000",
+    date: "Oct 2019 - Mar 2021",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Develop a project for booking breakfast and lunch for internal company staff.",
+      " Develop a Big Data project, collaborating with the QC team to fix UI errors.",
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#a2d2ff",
-    date: "Jan 2023 - Present",
+    title: "Senior Software Engineer",
+    company_name: "One Mount Consumer",
+    icon: onemount,
+    iconBg: "#e1e1e1",
+    date: "Mar 2021 - Mar 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Develop a Q&A game application using the React.js library and integrate it into the VinID e-wallet",
+      "Coordinate with the QC team to fix UI bugs on mobile devices.",
+    ],
+  },
+  {
+    title: "Fullstack Developer",
+    company_name: "WAVE Asean",
+    icon: waveasean,
+    iconBg: "#e1e1e1",
+    date: "Mar 2022 - Dec 2023",
+    points: [
+      "Lead a small team including Junior QC, Developers, and Designers",
+      "Responsible for building the team, training, implementing Agile Scrum, and delivering company products.",
+    ],
+  },
+  {
+    title: "Senior Software Fullstack",
+    company_name: "Rikkeisoft",
+    icon: rikkei,
+    iconBg: "#a60008",
+    date: "Dec 2023 - Current",
+    points: [
+      "Develop and maintain the backend system for 7-11's Offline Engine solution in Hawaii, USA",
+      "Develop, maintain, and fix frontend bugs for 7-11's Master Data Management System project along with the team in India. Execute test cases and write unit tests for features.",
     ],
   },
 ];
@@ -179,51 +203,67 @@ export const socialLinks = [
 
 export const projects = [
   {
-    iconUrl: pricewise,
+    iconUrl: viralprofit,
     theme: "btn-back-red",
-    name: "Amazon Price Tracker",
+    name: "Viral profit",
     description:
-      "Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.",
-    link: "https://github.com/adrianhajdin/pricewise",
+      "Develop systems for quizzes, checkout processes, viewing online course videos, and booking calendars, working with the Slack API. Position: Project Leader. Team size: 5 members. Tech stacks: React.js, Node.js, PostgreSQL, Vercel, Render.com.",
+    link: "https://www.viralprofits.yt/quiz",
   },
   {
-    iconUrl: threads,
+    iconUrl: seven11,
     theme: "btn-back-green",
-    name: "Full Stack Threads Clone",
+    name: "Offline Engine",
     description:
-      'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
-    link: "https://github.com/adrianhajdin/threads",
+      "Develop a system for handling promotional codes for stores. Implementing the code, whether online or offline, will synchronize with the latest promotional code data.",
+    link: "none",
   },
   {
-    iconUrl: car,
-    theme: "btn-back-blue",
-    name: "Car Finding App",
+    iconUrl: seven11,
+    theme: "btn-back-green",
+    name: "Master Data Management System",
     description:
-      "Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.",
-    link: "https://github.com/adrianhajdin/project_next13_car_showcase",
+      "Develop, maintain, and fix frontend bugs for 7-11's Master Data Management System project along with the team in India.",
+    link: "none",
   },
   {
-    iconUrl: snapgram,
-    theme: "btn-back-pink",
-    name: "Full Stack Instagram Clone",
+    iconUrl: waveasean,
+    theme: "btn-back-green",
+    name: "Moa Group",
     description:
-      "Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.",
-    link: "https://github.com/adrianhajdin/social_media_app",
+      "Building a dashboard system to manage the company, employees and members, channels, payments for the Chatting system.",
+    link: "none",
   },
   {
-    iconUrl: estate,
-    theme: "btn-back-black",
-    name: "Real-Estate Application",
+    iconUrl: waveasean,
+    theme: "btn-back-green",
+    name: "IRROM",
     description:
-      "Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.",
-    link: "https://github.com/adrianhajdin/projects_realestate",
+      "Development of video calling feature in investor and presenter meeting.",
+    link: "none",
   },
   {
-    iconUrl: summiz,
+    iconUrl: waveasean,
+    theme: "btn-back-green",
+    name: "Open chatting",
+    description:
+      "Develop web chat for travel sharing community in channels, groups and friends. Integrate into the project of restaurant booking, massage via chatbot.",
+    link: "none",
+  },
+  {
+    iconUrl: onemount,
     theme: "btn-back-yellow",
-    name: "AI Summarizer Application",
+    name: "Q & A",
     description:
-      "App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.",
-    link: "https://github.com/adrianhajdin/project_ai_summarizer",
+      "Develop a Q&A game application using the React.js library and integrate it into the VinID e-wallet. Coordinate with the QC team to fix UI bugs on mobile devices.",
+    link: "none",
+  },
+  {
+    iconUrl: hpicture,
+    theme: "btn-back-yellow",
+    name: "Hanh Tinh (GLOBALTECH)",
+    description:
+      "Develop a project for booking breakfast and lunch for the company's internal staff. Develop a Big Data project, collaborating with the QC team to fix UI errors.",
+    link: "none",
   },
 ];
