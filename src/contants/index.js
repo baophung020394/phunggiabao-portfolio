@@ -222,64 +222,101 @@ export const projects = [
     iconUrl: viralprofit,
     theme: "btn-back-red",
     name: "Viral profit",
-    description:
-      "Develop systems for quizzes, checkout processes, viewing online course videos, and booking calendars, working with the Slack API. Position: Project Leader. Team size: 5 members. Tech stacks: React.js, Node.js, PostgreSQL, Vercel, Render.com.",
+    description: [
+      "Develop systems for quizzes, checkout processes, viewing online course videos, and booking calendars, working with the Slack API.",
+      "Position: Project Leader.",
+      "Team size: 7 members",
+      "Tech stacks: React.js, Node.js, PostgreSQL, Vercel, Render.com.",
+    ],
     link: "https://www.viralprofits.yt/quiz",
   },
   {
     iconUrl: seven11,
     theme: "btn-back-green",
     name: "Offline Engine",
-    description:
-      "Develop a system for handling promotional codes for stores. Implementing the code, whether online or offline, will synchronize with the latest promotional code data.",
+    description: [
+      "Learn New Relic for monitoring the Node.js application, create alerts to send emails on the Raspberry Pi 5 device for the Offline Engine project.",
+      "Code the feature to update and synchronize the latest data from the cloud to In-Store when the cloud service is down for over an hour in Nodejs using expressjs for the Offline Engine project.",
+      "Create and run test cases to support the QC team for the Offline Engine project",
+      "Position: Backend Developer.",
+      "Team size: 8 members.",
+      "Tech stacks: React.js, Node.js, MongoDB, AWS, New Relic, MQTT, S3.",
+    ],
     link: "none",
   },
   {
     iconUrl: seven11,
     theme: "btn-back-green",
     name: "Master Data Management System",
-    description:
-      "Develop, maintain, and fix frontend bugs for 7-11's Master Data Management System project along with the team in India.",
+    description: [
+      "Join project Reactjs to fix bugs and develop additional features based on UX/UI from Figma for the Master Data Management System project.",
+      "Be responsible for daily reports, daily meetings, checking issues, and getting requirements from the Indian team for the Master Data Management System project.",
+      "Support creating merge requests and resolving code conflicts for the Vietnam team between the company's GitLab and the client's 7-11 GitLab.",
+      "Position: Frontend Developer.",
+      "Team size: 14 members.",
+      "Tech stacks: React.js",
+    ],
     link: "none",
   },
   {
     iconUrl: waveasean,
     theme: "btn-back-green",
     name: "Moa Group",
-    description:
-      "Building a dashboard system to manage the company, employees and members, channels, payments for the Chatting system.",
+    description: [
+      "Project MOA Group, managing company information, employees, users, chat channels information, chat groups, 1:1 chats, and company payment information.",
+      "Position: Fullstack developer.",
+      "Team size: 5 members.",
+      "Tech stacks: React.js, Java Sprint Boot 3, Nodejs, MySQL, Web socket",
+    ],
     link: "none",
   },
   {
     iconUrl: waveasean,
     theme: "btn-back-green",
     name: "IRROM",
-    description:
+    description: [
       "Development of video calling feature in investor and presenter meeting.",
+      "Position: Fullstack developer.",
+      "Team size: 5 members.",
+      "Tech stacks: React.js, Java Sprint Boot 3, Nodejs, MySQL, Web socket",
+    ],
     link: "none",
   },
   {
     iconUrl: waveasean,
     theme: "btn-back-green",
     name: "Open chatting",
-    description:
+    description: [
       "Develop web chat for travel sharing community in channels, groups and friends. Integrate into the project of restaurant booking, massage via chatbot.",
+      "Position: Fullstack developer.",
+      "Team size: 5 members.",
+      "Tech stacks: React.js, Java Sprint Boot 3, Nodejs, MySQL, Web socket",
+    ],
     link: "none",
   },
   {
     iconUrl: onemount,
     theme: "btn-back-yellow",
     name: "Q & A",
-    description:
+    description: [
       "Develop a Q&A game application using the React.js library and integrate it into the VinID e-wallet. Coordinate with the QC team to fix UI bugs on mobile devices.",
+      "Position: Senior Software Engineer.",
+      "Team size: 18 members.",
+      "Tech stacks: React.js",
+    ],
+
     link: "none",
   },
   {
     iconUrl: hpicture,
     theme: "btn-back-yellow",
     name: "Hanh Tinh (GLOBALTECH)",
-    description:
+    description: [
       "Develop a project for booking breakfast and lunch for the company's internal staff. Develop a Big Data project, collaborating with the QC team to fix UI errors.",
+      "Position:  Junior Frontend.",
+      "Team size: 4 members.",
+      "Tech stacks: Angular 9",
+    ],
     link: "none",
   },
 ];
