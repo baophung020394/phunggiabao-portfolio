@@ -28,8 +28,20 @@ import soundon from "./soundon.png";
 import soundoff from "./soundoff.png";
 import viralprofit from "./viralprofit.png";
 import seven11 from "./seven11.jpeg";
+import webpack from "./webpack.png";
+import docker from "./docker.png";
+import threejs from "./threejs.png";
+import postgresql from "./postgresql.png";
+import mysql from "./mysql.svg";
+import jest from "./jest.png";
 
 export {
+  jest,
+  postgresql,
+  mysql,
+  threejs,
+  docker,
+  webpack,
   seven11,
   viralprofit,
   css,

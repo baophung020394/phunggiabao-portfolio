@@ -1,8 +1,6 @@
 import {
-  car,
   contact,
   css,
-  estate,
   express,
   git,
   github,
@@ -13,17 +11,19 @@ import {
   mui,
   nextjs,
   nodejs,
-  pricewise,
   react,
   redux,
   sass,
-  snapgram,
-  summiz,
   tailwindcss,
-  threads,
   typescript,
   viralprofit,
   seven11,
+  webpack,
+  docker,
+  threejs,
+  postgresql,
+  mysql,
+  jest,
 } from "../assets/icons";
 import {
   apollo,
@@ -35,6 +35,31 @@ import {
 } from "../assets/images";
 
 export const skills = [
+  {
+    imageUrl: mysql,
+    name: "MySQL",
+    type: "Backend",
+  },
+  {
+    imageUrl: postgresql,
+    name: "Postgresql",
+    type: "Backend",
+  },
+  {
+    imageUrl: webpack,
+    name: "Webpack",
+    type: "Frontend",
+  },
+  {
+    imageUrl: docker,
+    name: "Docker",
+    type: "Frontend",
+  },
+  {
+    imageUrl: threejs,
+    name: "Threejs",
+    type: "Frontend",
+  },
   {
     imageUrl: css,
     name: "CSS",
@@ -110,6 +135,11 @@ export const skills = [
     name: "TypeScript",
     type: "Frontend",
   },
+  {
+    imageUrl: jest,
+    name: "Jest",
+    type: "Frontend",
+  },
 ];
 
 export const experiences = [
@@ -140,24 +170,11 @@ export const experiences = [
     ],
   },
   {
-    title: "Junior Frontend Angular",
-    company_name: "Hanh Tinh (GLOBALTECH)",
-    icon: hpicture,
-    iconBg: "#000000",
-    date: "Oct 2019 - Mar 2021",
-    points: [
-      "Develop a project for booking breakfast and lunch for internal company staff.",
-      "Develop a Big Data project, collaborating with the QC team to fix UI errors.",
-      "Technology used: Angular 9",
-      "Team size: 4 members",
-    ],
-  },
-  {
     title: "Senior Software Engineer",
     company_name: "One Mount Consumer",
     icon: onemount,
     iconBg: "#e1e1e1",
-    date: "Mar 2021 - Mar 2022",
+    date: "Oct 2019 - Mar 2021",
     points: [
       "Develop a Q&A game application using the React.js library and integrate it into the VinID e-wallet",
       "Coordinate with the QC team to fix UI bugs on mobile devices.",
@@ -170,15 +187,16 @@ export const experiences = [
     company_name: "WAVE Asean",
     icon: waveasean,
     iconBg: "#e1e1e1",
-    date: "Mar 2022 - Dec 2023",
+    date: "Mar 2021 - Mar 2023",
     points: [
-      "Develop additional features for JAVA projects in Korea.",
-      "Develop projects related to group chat rooms, audio and video meeting rooms, and screen sharing",
-      "Build and develop a website with React.js. Develop source code from the beginning of the project.",
-      "Manage a small team including QC, Designer, and Developer.",
-      "Establish an Agile Scrum model for the company",
+      "Build projects from scratch using React.js and successfully deliver 2 projects for employee and user information management for the Moa Group Chat system, including channel, group, and 1:1 chat functionalities.",
+      "Maintain and develop additional small tasks for the Java Spring Boot 3 project. Successfully deliver the video call feature for the IRROM project from Korea.",
+      "Participated in discussions, development, and successful delivery of the Angular 9 project for weekly breakfast and lunch orders for company staff at Korea.",
+      "Involved in fixing UI bugs for web and mobile, and developing additional features for the company's big data security project.",
+      "Discuss and ideate with designers about UX/UI to make appropriate adjustments for the projects.",
+      "Establish the Scrum model for the team, manage and assign tasks, and provide training for team members.",
       "Responsible for training members and delivering projects.",
-      "Technology used: Reactjs, JAVA Spring Boot 3, MySQL, Socket",
+      "Technology used: Reactjs, Nodejs, JAVA Spring Boot 3, MySQL, Socket",
       "Team size: 4 members",
     ],
   },
@@ -187,7 +205,7 @@ export const experiences = [
     company_name: "Rikkeisoft",
     icon: rikkei,
     iconBg: "#a60008",
-    date: "Dec 2023 - Current",
+    date: "Mar 2023 - Current",
     points: [
       "Develop features to enhance the Offline Engine system by applying discount codes for 7-11 stores when the store loses internet connectivity. Once internet is restored, the discount codes are updated on the cloud based on the Node.js/MongoDB/IoT - MQTT/S3 source code in Hawaii, USA.",
       "Participate in and fix issues for the Master Data Management System project using React.js with the Indian team of 7-11 USA.",
